@@ -9,12 +9,11 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 @Configuration
-@EnableScheduling // cab be applied on main class to achieve scheduling in all the places
 @Slf4j
 public class EmailSenderScheduler {
 
-  // after every 2 seconds
-  @Scheduled(fixedDelay = 2000)
+  // after every 5 minutes
+  @Scheduled(fixedDelay = 50000)
   // @Scheduled(cron = "5 4 * * sun") //At 04:05 on Sunday.
   public void sendEmail() { // method must be with void return type
     log.info("Email Sent...." + LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME));
