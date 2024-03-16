@@ -1,19 +1,14 @@
 package org.zaidism.dto;
 
 import jakarta.validation.constraints.*;
-import lombok.*;
-import org.hibernate.validator.constraints.Range;
-
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
+import lombok.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @ToString
-@EqualsAndHashCode
 public class Employee {
 
   @NotNull private Integer id;

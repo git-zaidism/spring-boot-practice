@@ -1,16 +1,15 @@
 package org.zaidism.controller;
 
 import jakarta.validation.Valid;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.zaidism.dto.Employee;
 import org.zaidism.service.EmployeeService;
 
-import java.util.List;
-
 @RestController
-@RequestMapping("/emp")
+@RequestMapping("/employee")
 @RequiredArgsConstructor
 public class EmployeeController {
 

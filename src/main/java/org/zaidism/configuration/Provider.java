@@ -1,12 +1,11 @@
 package org.zaidism.configuration;
 
-import org.springframework.context.annotation.Configuration;
-import org.zaidism.dto.Employee;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.springframework.context.annotation.Configuration;
+import org.zaidism.dto.Employee;
 
 @Configuration
 public class Provider {
